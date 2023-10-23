@@ -1,0 +1,54 @@
+body {
+  background-color: bisque;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.Olle {
+  padding-right: 5%;
+  width: 600px;
+  height: 800px;
+}
+.omMig {
+  padding-left: 16%;
+  width: 40%;
+}
+.meny {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.meny-element {
+  padding: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: bisque;
+}
+.meny-element:hover {
+  padding: 1rem;
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: burlywood;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.huvud-och-fot {
+  width: 100%;
+  height: 3em;
+  background-color: aqua;
+}
