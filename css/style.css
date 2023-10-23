@@ -2,6 +2,8 @@ body {
   background-color: bisque;
   padding: 0;
   margin: 0;
+  padding-left: 16%;
+  padding-right: 16%;
 }
 
 .container {
@@ -10,14 +12,87 @@ body {
   width: 95%;
 }
 .Olle {
-  padding-right: 5%;
-  width: 600px;
+  width: 100%;
   height: 800px;
 }
 .omMig {
-  padding-left: 16%;
-  width: 40%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  margin-inline: 2em;
+  padding-inline: 2em;
+  justify-content: space-between;
 }
+
+p {
+  text-align: center;
+}
+
+#git-link {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+.projekt-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projekt-preview {
+  padding-top: 10em;
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+}
+
+.fillerDiv {
+  width: 5%;
+}
+
+.display-img1 {
+  width: 90%;
+  height: 100%;
+  filter: blur(2px);
+}
+.projekt-item {
+  position: relative;
+}
+.projekt1text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.projekt2text {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.display-img2 {
+  width: 95%;
+  height: 100%;
+  filter: blur(3px);
+}
+
+#caesar1 {
+  width: 75%;
+}
+
+#caesar2 {
+  width: 75%;
+}
+
 .meny {
   display: flex;
   flex-direction: row;
