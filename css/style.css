@@ -1,71 +1,146 @@
-body {
-  background-color: bisque;
-  padding: 0;
-  margin: 0;
-  padding-left: 16%;
-  padding-right: 16%;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+  }
+
+  .meny {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .meny-element {
+    padding: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    background-color: bisque;
+  }
+  .meny-element:hover {
+    padding: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    background-color: burlywood;
+    border-radius: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  li {
+    list-style: none;
+  }
 }
 
-.meny {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    padding-left: 16%;
+    padding-right: 16%;
+  }
 
-.meny-element {
-  padding: 1rem;
-  list-style: none;
-  font-size: 1.5rem;
-  background-color: bisque;
-}
-.meny-element:hover {
-  padding: 1rem;
-  list-style: none;
-  font-size: 1.5rem;
-  background-color: burlywood;
-  border-radius: 10px;
-}
+  .meny {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+  .meny-element {
+    padding: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    background-color: bisque;
+  }
+  .meny-element:hover {
+    padding: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+    background-color: burlywood;
+    border-radius: 10px;
+  }
 
-a:visited {
-  color: black;
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-li {
-  list-style: none;
+  a:visited {
+    color: black;
+  }
+
+  li {
+    list-style: none;
+  }
 }
 /* 
  * Css för meny samt body. Bisque masterrace
  */
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-}
-.Olle {
-  width: 100%;
-  height: 800px;
-}
-.omMig {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid black;
-  margin-inline: 2em;
-  padding-inline: 2em;
-  justify-content: space-between;
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .Olle {
+    width: 100%;
+    height: 325px;
+    border-radius: 5px;
+  }
+  .omMig {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-right: 0.25em;
+    padding-inline: 1em;
+    justify-content: space-between;
+  }
+
+  p {
+    text-align: center;
+  }
 }
 
-p {
-  text-align: center;
-}
+@media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .Olle {
+    width: 100%;
+    height: 800px;
+    border-radius: 5px;
+  }
+  .omMig {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-inline: 2em;
+    padding-inline: 2em;
+    justify-content: space-between;
+  }
 
+  p {
+    text-align: center;
+  }
+}
 /* 
  * Startsida, text om mig samt bild och ikoner.
  */
