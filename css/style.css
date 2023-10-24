@@ -6,93 +6,6 @@ body {
   padding-right: 16%;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-}
-.Olle {
-  width: 100%;
-  height: 800px;
-}
-.omMig {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid black;
-  margin-inline: 2em;
-  padding-inline: 2em;
-  justify-content: space-between;
-}
-
-p {
-  text-align: center;
-}
-
-#git-link {
-  text-decoration: underline;
-}
-
-li {
-  list-style: none;
-}
-
-.projekt-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.projekt-preview {
-  padding-top: 10em;
-  display: flex;
-  width: fit-content;
-  flex-direction: row;
-}
-
-.fillerDiv {
-  width: 5%;
-}
-
-.display-img1 {
-  width: 90%;
-  height: 100%;
-  filter: blur(2px);
-}
-.projekt-item {
-  position: relative;
-}
-.projekt1text {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-}
-.projekt2text {
-  position: absolute;
-  top: 50%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-.display-img2 {
-  width: 95%;
-  height: 100%;
-  filter: blur(3px);
-}
-
-#caesar1 {
-  width: 75%;
-}
-
-#caesar2 {
-  width: 75%;
-}
-
 .meny {
   display: flex;
   flex-direction: row;
@@ -122,8 +35,188 @@ a:visited {
   color: black;
 }
 
-.huvud-och-fot {
+li {
+  list-style: none;
+}
+/* 
+ * Css för meny samt body. Bisque masterrace
+ */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.Olle {
   width: 100%;
-  height: 3em;
-  background-color: aqua;
+  height: 800px;
+}
+.omMig {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  margin-inline: 2em;
+  padding-inline: 2em;
+  justify-content: space-between;
+}
+
+p {
+  text-align: center;
+}
+
+/* 
+ * Startsida, text om mig samt bild och ikoner.
+ */
+
+.projekt-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-img1 {
+  width: 90%;
+  height: 100%;
+  -webkit-animation: 0.2s linear forwards go-back;
+  -moz-animation: 0.2s linear forwards go-back;
+  -o-animation: 0.2s linear backwards go-back;
+  animation: 0.2s linear forwards go-back;
+}
+
+.display-img2 {
+  width: 95%;
+  height: 100%;
+  -webkit-animation: 0.2s linear forwards go-back;
+  -moz-animation: 0.2s linear forwards go-back;
+  -o-animation: 0.2s linear backwards go-back;
+  animation: 0.2s linear forwards go-back;
+}
+
+.display-img1:hover {
+  -webkit-animation: 0.5s linear forwards reveal;
+  -moz-animation: 0.5s linear forwards reveal;
+  -o-animation: 0.5s linear backwards reveal;
+  animation: 0.5s linear forwards reveal;
+}
+
+.display-img2:hover {
+  -webkit-animation: 0.5s linear forwards reveal;
+  -moz-animation: 0.5s linear forwards reveal;
+  -o-animation: 0.5s linear forwards reveal;
+  animation: 0.5s linear forwards reveal;
+}
+
+@-webkit-keyframes reveal {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(1px);
+  }
+}
+@-moz-keyframes reveal {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(1px);
+  }
+}
+@-o-keyframes reveal {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(1px);
+  }
+}
+@keyframes reveal {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(1px);
+  }
+}
+
+@-webkit-keyframes go-back {
+  from {
+    filter: blur(1px);
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+@-moz-keyframes go-back {
+  from {
+    filter: blur(1px);
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+@-o-keyframes go-back {
+  from {
+    filter: blur(1px);
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+@keyframes go-back {
+  from {
+    filter: blur(1px);
+  }
+  to {
+    filter: blur(5px);
+  }
+}
+
+.projekt-preview {
+  padding-top: 10em;
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+}
+
+.fillerDiv {
+  width: 5%;
+}
+
+.projekt-item {
+  position: relative;
+}
+
+.projekt1text {
+  color: white;
+  position: absolute;
+  top: 44%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.projekt2text {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+/*
+ * Landningssida för mina projekt, preview för alla projekt med blurrad bild samt text på.
+ */
+
+#git-link {
+  text-decoration: underline;
+}
+
+#caesar1 {
+  width: 75%;
+}
+
+#caesar2 {
+  width: 75%;
 }
