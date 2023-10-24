@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 @media only screen and (max-width: 600px) {
   body {
     background-color: bisque;
@@ -167,19 +172,41 @@ option {
 }
 
 form {
-  padding-left: 4em;
+  padding: 1em;
 }
 
 .input-namn {
-  width: 83.5%;
-  background: url(/Images/icons8-person-20.png) no-repeat scroll 97% -1px;
+  width: 100%;
+  background: url(/Images/icons8-person-20.png) no-repeat scroll 97% 7px;
   background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
 }
 
 .input-email {
-  width: 83.5%;
+  width: 100%;
   margin-top: 1em;
   background: url(/Images/icons8-email-20.png) no-repeat scroll 97%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
+}
+
+.input-email:focus {
+  outline: none;
+  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
+  background: url(/Images/icons8-email-20-green.png) no-repeat scroll 97% 7px;
+  background-color: white;
+}
+
+.input-namn:focus {
+  outline: none;
+  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
+  background: url(/Images/icons8-person-20-green.png) no-repeat scroll 97% 7px;
   background-color: white;
 }
 
@@ -188,7 +215,33 @@ form {
 }
 
 .knapp {
-  margin-left: 18.8%;
+  margin-top: 5%;
+  appearance: none;
+  padding: 10px;
+  border: none;
+  background-color: #030303e3;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.knapp:hover {
+  box-shadow: 0 0 10px 6px rgba(87, 180, 95, 0.603);
+  color: green;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
+  background-color: white;
+}
+
+select:focus {
+  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
 }
 
 input {
@@ -199,6 +252,15 @@ textarea {
   margin-top: 2em;
   margin-bottom: 2em;
   resize: none;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
+}
+
+textarea:focus {
+  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
+  outline: none;
 }
 
 legend {
