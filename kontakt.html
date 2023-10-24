@@ -15,6 +15,38 @@
       </ul>
     </nav>
 
-    
+    <div class="kontakt">
+      <div class="filler"></div>
+
+      <div class="formulär">
+        <legend>Kontakta mig med formuläret nedan!</legend>
+        <br />
+        <form>
+          <input class="input-namn" type="namn" placeholder="Ditt namn" />
+          <br />
+
+          <input class="input-email" type="email" placeholder="Din email" />
+          <br />
+          <br />
+          <select name="Ärende" id="ärende" required>
+            <option value="" disabled selected>Vad gäller ditt ärende?</option>
+            <option value="Arbete">Arbete</option>
+            <option value="Discgolf">Spela discgolf</option>
+            <option value="Dota">Spela Dota</option>
+          </select>
+          <textarea
+            type="message"
+            rows="10"
+            cols="42"
+            placeholder="Skriv ditt meddelande här...."
+          ></textarea>
+          <br />
+          <input type="checkbox" name="cb" />
+          <label for="cb">Jag godkänner Olles policy</label>
+          <input class="knapp" type="button" value="Skicka" />
+        </form>
+      </div>
+      <div class="filler"></div>
+    </div>
   </body>
 </html>

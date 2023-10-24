@@ -70,6 +70,69 @@ p {
  * Startsida, text om mig samt bild och ikoner.
  */
 
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+
+.kontakt {
+  padding-top: 5em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.formulär {
+  width: 50%;
+}
+
+form {
+  padding-left: 4em;
+}
+
+.input-namn {
+  width: 83.5%;
+  background: url(/Images/icons8-person-20.png) no-repeat scroll 97% -1px;
+  background-color: white;
+}
+
+.input-email {
+  width: 83.5%;
+  margin-top: 1em;
+  background: url(/Images/icons8-email-20.png) no-repeat scroll 97%;
+  background-color: white;
+}
+
+.filler {
+  width: 50%;
+}
+
+.knapp {
+  margin-left: 18.8%;
+}
+
+input {
+  padding: 2px;
+}
+
+textarea {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  resize: none;
+}
+
+legend {
+  text-align: center;
+}
+/*
+  * Kontaktsida
+  */
+
 .projekt-display {
   display: flex;
   flex-direction: column;
@@ -219,4 +282,8 @@ p {
 
 #caesar2 {
   width: 75%;
+}
+
+#Elin-och-Marcus {
+  width: 90%;
 }
