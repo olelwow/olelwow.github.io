@@ -169,10 +169,12 @@ option {
 
 .formulär {
   width: 50%;
+  background-color: rgba(39, 75, 75, 0.26);
+  border-radius: 10px;
 }
 
 form {
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .input-namn {
