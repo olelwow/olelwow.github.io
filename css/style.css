@@ -265,8 +265,9 @@ textarea:focus {
   outline: none;
 }
 
-legend {
+.kontakt {
   text-align: center;
+  padding: 0;
 }
 /*
   * Kontaktsida
