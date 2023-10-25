@@ -145,6 +145,11 @@
   p {
     text-align: center;
   }
+  .ikoner {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+  }
 }
 /* 
  * Startsida, text om mig samt bild och ikoner.
