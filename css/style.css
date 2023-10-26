@@ -169,10 +169,12 @@ option {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex: 1;
 }
 
 .formulär {
-  width: 50%;
+  flex: 0.1;
   background-color: rgba(39, 75, 75, 0.26);
   border-radius: 10px;
 }
@@ -214,10 +216,6 @@ form {
   box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
   background: url(/Images/icons8-person-20-green.png) no-repeat scroll 97% 7px;
   background-color: white;
-}
-
-.filler {
-  width: 50%;
 }
 
 .knapp {
