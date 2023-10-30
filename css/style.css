@@ -1,158 +1,120 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: bisque;
-    padding: 0;
-    margin: 0;
-  }
-
-  .meny {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .meny-element {
-    padding: 1rem;
-    list-style: none;
-    font-size: 1.5rem;
-    background-color: bisque;
-  }
-  .meny-element:hover {
-    padding: 1rem;
-    list-style: none;
-    font-size: 1.5rem;
-    background-color: burlywood;
-    border-radius: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  a:visited {
-    color: black;
-  }
-
-  li {
-    list-style: none;
-  }
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media only screen and (min-width: 992px) {
-  body {
-    background-color: bisque;
-    padding: 0;
-    margin: 0;
-    padding-left: 16%;
-    padding-right: 16%;
-  }
-
-  .meny {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .meny-element {
-    padding: 1rem;
-    list-style: none;
-    font-size: 1.5rem;
-    background-color: bisque;
-  }
-  .meny-element:hover {
-    padding: 1rem;
-    list-style: none;
-    font-size: 1.5rem;
-    background-color: burlywood;
-    border-radius: 10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  a:visited {
-    color: black;
-  }
-
-  li {
-    list-style: none;
-  }
-}
-/* 
- * Css för meny samt body. Bisque masterrace
- */
-
-@media only screen and (max-width: 600px) {
-  .container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  .Olle {
-    width: 100%;
-    height: 325px;
-    border-radius: 5px;
-  }
-  .omMig {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-left: 1em;
-    margin-right: 0.25em;
-    padding-inline: 1em;
-    justify-content: space-between;
-  }
-
-  p {
-    text-align: center;
-  }
+* p {
+  font-size: large;
 }
 
-@media only screen and (min-width: 992px) {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-  }
-  .Olle {
-    width: 100%;
-    height: 800px;
-    border-radius: 5px;
-  }
-  .omMig {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-inline: 2em;
-    padding-inline: 2em;
-    justify-content: space-between;
-  }
-
-  p {
-    text-align: center;
-  }
-  .ikoner {
-    display: flex;
-    flex-direction: row;
-  }
+body {
+  background-image: url(/Images/annie-spratt-YKBoscpkYwY-unsplash.jpg);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
 }
-/* 
- * Startsida, text om mig samt bild och ikoner.
- */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.huvud {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background-image: linear-gradient(
+    to top,
+    rgba(169, 189, 158, 0.123),
+    rgba(101, 153, 67, 0.863)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+nav {
+  padding-left: 3.2em;
+  display: flex;
+  justify-content: center;
+}
+
+.meny {
+  font-size: 2em;
+  padding: 0.5em;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.meny-element a {
+  color: black;
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+.meny-element a:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(103, 151, 78, 0.842),
+    rgba(63, 121, 25, 0.801)
+  );
+}
+/* SIDHUVUD OCH MENY */
+
+.container {
+  display: flex;
+
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 4em;
+  align-items: center;
+
+  width: 70%;
+
+  gap: 2em;
+}
+
+.omMig {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(226, 217, 217, 0.932);
+  gap: 3em;
+  padding: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 30px;
+
+  flex: 0.8;
+}
+
+.bildOlle {
+  display: flex;
+
+  flex: 0.8;
+}
+
+.Olle {
+  border-radius: 50%;
+
+  border: 8px solid rgba(226, 217, 217, 0.521);
+  max-width: 70%;
+}
+
+/* STARTSIDA */
 
 select:required:invalid {
   color: gray;
@@ -166,17 +128,21 @@ option {
 
 .kontakt {
   padding-top: 5em;
+
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-grow: 1;
   flex: 1;
 }
 
 .formulär {
   flex: 0.1;
-  background-color: rgba(39, 75, 75, 0.26);
+  background-color: rgba(226, 217, 217, 0.932);
   border-radius: 10px;
+  margin-top: 5%;
+  height: fit-content;
 }
 
 form {
@@ -184,22 +150,22 @@ form {
 }
 
 .input-namn {
-  width: 100%;
+  width: 95%;
   background: url(/Images/icons8-person-20.png) no-repeat scroll 97% 7px;
   background-color: white;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
   box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
 }
 
 .input-email {
-  width: 100%;
+  width: 95%;
   margin-top: 1em;
   background: url(/Images/icons8-email-20.png) no-repeat scroll 97%;
   background-color: white;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
   box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
 }
@@ -248,10 +214,6 @@ select:focus {
   box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
 }
 
-input {
-  padding: 2px;
-}
-
 textarea {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -271,9 +233,8 @@ textarea:focus {
   text-align: center;
   padding: 0;
 }
-/*
-  * Kontaktsida
-  */
+
+/* KONTAKT */
 
 .projekt-display {
   display: flex;
@@ -291,7 +252,7 @@ textarea:focus {
 }
 
 .display-img2 {
-  width: 95%;
+  width: 90%;
   height: 100%;
   -webkit-animation: 0.2s linear forwards go-back;
   -moz-animation: 0.2s linear forwards go-back;
@@ -380,14 +341,19 @@ textarea:focus {
 }
 
 .projekt-preview {
-  padding-top: 10em;
+  padding-top: 3em;
+  padding-left: 5em;
   display: flex;
-  width: fit-content;
+  width: 70%;
+  gap: 2em;
   flex-direction: row;
+  align-items: center;
 }
 
-.fillerDiv {
-  width: 5%;
+#comingSoon {
+  width: 90%;
+  height: 100%;
+  filter: blur(10px);
 }
 
 .projekt-item {
@@ -397,7 +363,7 @@ textarea:focus {
 .projekt1text {
   color: white;
   position: absolute;
-  top: 44%;
+  top: 48%;
   left: 45%;
   transform: translate(-50%, -50%);
 }
@@ -410,15 +376,24 @@ textarea:focus {
   text-align: center;
   color: white;
 }
+
+.comingSoonText {
+  color: white;
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
 /*
- * Landningssida för mina projekt, preview för alla projekt med blurrad bild samt text på.
- */
+   * Landningssida för mina projekt, preview för alla projekt med blurrad bild samt text på.
+   */
 
 #git-link {
   text-decoration: underline;
 }
 
 #caesar1 {
+  padding-top: 2em;
   width: 75%;
 }
 
@@ -427,5 +402,63 @@ textarea:focus {
 }
 
 #Elin-och-Marcus {
-  width: 90%;
+  padding: 2em;
+  width: 70%;
 }
+
+.projekt-display {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.proj1paragraf1 {
+  background-color: rgba(226, 217, 217, 0.932);
+  padding: 1.5em;
+  border-radius: 30px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.proj1paragraf {
+  background-color: rgba(226, 217, 217, 0.932);
+  padding: 1.5em;
+  border-radius: 30px;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.proj2paragraf {
+  background-color: rgba(226, 217, 217, 0.932);
+  padding: 1.5em;
+  border-radius: 30px;
+  margin-bottom: 10em;
+  text-align: center;
+}
+
+/* PROJEKT */
+
+.fot {
+  position: fixed;
+
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(169, 189, 158, 0.068),
+    rgba(101, 153, 67, 0.863)
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ikoner {
+  padding-top: 0.5em;
+  display: flex;
+  gap: 2em;
+}
+
+/* SIDFOT */
