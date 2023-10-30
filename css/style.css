@@ -72,6 +72,7 @@ nav {
     rgba(63, 121, 25, 0.801)
   );
 }
+
 /* SIDHUVUD OCH MENY */
 
 .container {
@@ -103,7 +104,7 @@ nav {
 
 .bildOlle {
   display: flex;
-
+  justify-content: flex-end;
   flex: 0.8;
 }
 
@@ -242,6 +243,59 @@ textarea:focus {
   align-items: center;
 }
 
+.projekt-preview {
+  padding-top: 3em;
+  padding-left: 5em;
+  display: flex;
+  width: 70%;
+  gap: 2em;
+  flex-direction: row;
+  align-items: center;
+}
+
+#comingSoon {
+  width: 90%;
+  height: 100%;
+  filter: blur(10px);
+}
+
+#comingSoon2 {
+  width: 90%;
+  height: 100%;
+  filter: blur(10px);
+}
+
+.projekt-item {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+
+.projekt1text {
+  color: white;
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.projekt2text {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.comingSoonText {
+  color: white;
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
 .display-img1 {
   width: 90%;
   height: 100%;
@@ -272,6 +326,11 @@ textarea:focus {
   -moz-animation: 0.5s linear forwards reveal;
   -o-animation: 0.5s linear forwards reveal;
   animation: 0.5s linear forwards reveal;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @-webkit-keyframes reveal {
@@ -340,50 +399,6 @@ textarea:focus {
   }
 }
 
-.projekt-preview {
-  padding-top: 3em;
-  padding-left: 5em;
-  display: flex;
-  width: 70%;
-  gap: 2em;
-  flex-direction: row;
-  align-items: center;
-}
-
-#comingSoon {
-  width: 90%;
-  height: 100%;
-  filter: blur(10px);
-}
-
-.projekt-item {
-  position: relative;
-}
-
-.projekt1text {
-  color: white;
-  position: absolute;
-  top: 48%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-}
-
-.projekt2text {
-  position: absolute;
-  top: 45%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-.comingSoonText {
-  color: white;
-  position: absolute;
-  top: 48%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-}
 /*
    * Landningssida för mina projekt, preview för alla projekt med blurrad bild samt text på.
    */
@@ -456,9 +471,104 @@ textarea:focus {
 }
 
 .ikoner {
+  width: 50%;
   padding-top: 0.5em;
   display: flex;
   gap: 2em;
+}
+
+.cat {
+  width: 50%;
+  transform: rotate(-40deg) translateX(75%) translateY(345%);
+  -webkit-animation: 0.2s ease-in forwards döljKatt;
+  -moz-animation: 0.2s ease-in forwards döljKatt;
+  -o-animation: 0.2s ease-in forwards döljKatt;
+  animation: 0.2s ease-in forwards döljKatt;
+}
+
+.cat:hover {
+  -webkit-animation: 1s ease-out forwards visaKatt;
+  -moz-animation: 1s ease-out forwards visaKatt;
+  -o-animation: 1s ease-out forwards visaKatt;
+  animation: 1s ease-out forwards visaKatt;
+}
+
+.kattParagraf {
+  position: absolute;
+  bottom: 17%;
+  right: 6%;
+  transform: rotate(-43deg);
+  padding: 1em;
+  border-radius: 20px;
+  background-color: rgba(226, 217, 217, 0.932);
+  display: none;
+}
+
+@-webkit-keyframes visaKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+}
+@-moz-keyframes visaKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+}
+@-o-keyframes visaKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+}
+@keyframes visaKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+}
+
+@-webkit-keyframes döljKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
+}
+
+@-moz-keyframes döljKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
+}
+@-o-keyframes döljKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
+}
+@keyframes döljKatt {
+  from {
+    transform: rotate(-40deg) translateX(75%) translateY(225%);
+  }
+  to {
+    transform: rotate(-40deg) translateX(75%) translateY(345%);
+  }
 }
 
 /* SIDFOT */
