@@ -60,10 +60,11 @@ nav {
   margin-left: 0.3em;
   font-size: 2em;
   padding: 0.5em;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .meny-element a {
@@ -96,20 +97,6 @@ nav {
   width: auto;
 }
 
-.darkParagraf {
-  background-color: rgba(7, 7, 7, 0.712);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 3em;
-  padding: 3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 30px;
-  flex: 0.8;
-}
-
 .darkHead {
   width: 100%;
   background-image: linear-gradient(
@@ -120,25 +107,23 @@ nav {
 }
 
 .darkNav {
-  padding-left: 3.2em;
   display: flex;
-  color: white;
 }
 
 .darkMeny {
-  margin-left: 0.1em;
   font-size: 1em;
-  padding: 0.5em;
-  width: 95%;
+  padding-left: 3.2em;
+  width: 97.3%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: white;
 }
 
-.darkLi {
+.darkModeText {
+  color: rgb(252, 252, 252);
 }
 
+/* DARK MODE */
 .container {
   display: flex;
 
@@ -177,6 +162,20 @@ nav {
 
   border: 8px solid rgba(226, 218, 218, 0.521);
   max-width: 80%;
+}
+
+.darkParagraf {
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3em;
+  padding: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 30px;
+  flex: 0.8;
 }
 
 /* STARTSIDA */
@@ -537,6 +536,15 @@ textarea:focus {
   justify-content: center;
 }
 
+.darkFoot {
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(169, 189, 158, 0.027),
+    rgba(0, 0, 0, 0.863)
+  );
+}
+
 .ikoner {
   width: 55%;
   padding-top: 0.5em;
@@ -544,6 +552,36 @@ textarea:focus {
   padding-left: 1em;
 
   gap: 2em;
+}
+
+.facebook {
+  background-image: url(/Images/icons8-facebook-60\(1\).png);
+  background-repeat: no-repeat;
+  width: 5.5%;
+}
+
+.instagram {
+  background-image: url(/Images/icons8-instagram-60.png);
+  background-repeat: no-repeat;
+  width: 5.2%;
+}
+
+.linkedin {
+  background-image: url(/Images/icons8-linkedin-60.png);
+  background-repeat: no-repeat;
+  width: 5.5%;
+}
+
+.darkFb {
+  background-image: url(/Images/icons8-facebook-60-white.png);
+}
+
+.darkInsta {
+  background-image: url(/Images/icons8-instagram-60-white.png);
+}
+
+.darkLinkedIn {
+  background-image: url(/Images/icons8-linkedin-60-white.png);
 }
 
 .cat {
@@ -560,17 +598,6 @@ textarea:focus {
   -moz-animation: 1s ease-out forwards visaKatt;
   -o-animation: 1s ease-out forwards visaKatt;
   animation: 1s ease-out forwards visaKatt;
-}
-
-.kattParagraf {
-  position: absolute;
-  bottom: 18%;
-  right: 6%;
-  transform: rotate(-43deg);
-  padding: 1em;
-  border-radius: 20px;
-  background-color: rgba(226, 218, 218, 0.932);
-  display: none;
 }
 
 @-webkit-keyframes visaKatt {
