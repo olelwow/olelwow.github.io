@@ -39,20 +39,24 @@ a {
     rgba(101, 153, 68, 0.863)
   );
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   font-weight: bolder;
 }
 
 nav {
-  padding-left: 3.2em;
   display: flex;
+  width: 90%;
+  justify-content: space-around;
+  margin-left: -2em;
 }
 
 #darkmode {
   width: 5%;
-  align-self: flex-start;
-  margin-left: -2em;
+
+  margin-left: -5em;
+  justify-self: left;
   cursor: pointer;
 }
 
@@ -67,13 +71,14 @@ nav {
   align-items: center;
 }
 
-.meny-element a {
+.meny-länk {
+  margin-left: 2em;
   color: black;
   padding: 0.5em;
   border-radius: 15px;
 }
 
-.meny-element a:hover {
+.meny-länk:hover {
   background-image: linear-gradient(
     to top,
     rgba(103, 151, 88, 0.842),
@@ -104,6 +109,13 @@ nav {
     rgba(169, 189, 158, 0.027),
     rgba(0, 0, 0, 0.863)
   );
+  position: sticky;
+  top: 0;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bolder;
 }
 
 .darkNav {
@@ -121,6 +133,9 @@ nav {
 
 .darkModeText {
   color: rgb(252, 252, 252);
+  padding: 0.5em;
+  border-radius: 15px;
+  margin-left: 2em;
 }
 
 /* DARK MODE */
@@ -202,7 +217,7 @@ option {
 }
 
 .formulär {
-  flex: 0.1;
+  flex: 0.2;
   background-color: rgba(226, 218, 218, 0.932);
   border-radius: 10px;
   margin-top: 5%;
@@ -543,6 +558,13 @@ textarea:focus {
     rgba(169, 189, 158, 0.027),
     rgba(0, 0, 0, 0.863)
   );
+
+  position: fixed;
+  bottom: 0;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .ikoner {
@@ -574,14 +596,20 @@ textarea:focus {
 
 .darkFb {
   background-image: url(/Images/icons8-facebook-60-white.png);
+  background-repeat: no-repeat;
+  width: 5.5%;
 }
 
 .darkInsta {
   background-image: url(/Images/icons8-instagram-60-white.png);
+  background-repeat: no-repeat;
+  width: 5.2%;
 }
 
 .darkLinkedIn {
   background-image: url(/Images/icons8-linkedin-60-white.png);
+  background-repeat: no-repeat;
+  width: 5.5%;
 }
 
 .cat {
