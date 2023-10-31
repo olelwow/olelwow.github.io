@@ -32,11 +32,11 @@ a {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 75px;
+  height: 85px;
   background-image: linear-gradient(
     to top,
     rgba(169, 189, 158, 0.123),
-    rgba(101, 153, 67, 0.863)
+    rgba(101, 153, 68, 0.863)
   );
   display: flex;
   flex-direction: column;
@@ -47,16 +47,23 @@ a {
 nav {
   padding-left: 3.2em;
   display: flex;
-  justify-content: center;
+}
+
+#darkmode {
+  width: 5%;
+  align-self: flex-start;
+  margin-left: -2em;
+  cursor: pointer;
 }
 
 .meny {
+  margin-left: 0.3em;
   font-size: 2em;
   padding: 0.5em;
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .meny-element a {
@@ -68,31 +75,88 @@ nav {
 .meny-element a:hover {
   background-image: linear-gradient(
     to top,
-    rgba(103, 151, 78, 0.842),
+    rgba(103, 151, 88, 0.842),
     rgba(63, 121, 25, 0.801)
   );
 }
 
 /* SIDHUVUD OCH MENY */
 
+.dark {
+  background-image: url(/Images/annie-spratt-YKBoscpkYwY-unsplash.jpg);
+  background-color: rgba(0, 0, 0, 0.438);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.darkParagraf {
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3em;
+  padding: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 30px;
+  flex: 0.8;
+}
+
+.darkHead {
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(169, 189, 158, 0.027),
+    rgba(0, 0, 0, 0.863)
+  );
+}
+
+.darkNav {
+  padding-left: 3.2em;
+  display: flex;
+  color: white;
+}
+
+.darkMeny {
+  margin-left: 0.1em;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.darkLi {
+}
+
 .container {
   display: flex;
 
   padding-left: 4em;
   padding-right: 4em;
-  padding-top: 4em;
+  padding-top: 1em;
   align-items: center;
 
-  width: 70%;
+  width: 80%;
 
-  gap: 2em;
+  gap: 3em;
 }
 
 .omMig {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(226, 217, 217, 0.932);
+  background-color: rgba(226, 218, 218, 0.932);
   gap: 3em;
   padding: 3em;
   padding-left: 1em;
@@ -111,8 +175,8 @@ nav {
 .Olle {
   border-radius: 50%;
 
-  border: 8px solid rgba(226, 217, 217, 0.521);
-  max-width: 70%;
+  border: 8px solid rgba(226, 218, 218, 0.521);
+  max-width: 80%;
 }
 
 /* STARTSIDA */
@@ -140,7 +204,7 @@ option {
 
 .formulär {
   flex: 0.1;
-  background-color: rgba(226, 217, 217, 0.932);
+  background-color: rgba(226, 218, 218, 0.932);
   border-radius: 10px;
   margin-top: 5%;
   height: fit-content;
@@ -152,7 +216,7 @@ form {
 
 .input-namn {
   width: 95%;
-  background: url(/Images/icons8-person-20.png) no-repeat scroll 97% 7px;
+  background: url(/Images/icons8-person-20.png) no-repeat scroll 98% 8px;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
@@ -163,7 +227,7 @@ form {
 .input-email {
   width: 95%;
   margin-top: 1em;
-  background: url(/Images/icons8-email-20.png) no-repeat scroll 97%;
+  background: url(/Images/icons8-email-20.png) no-repeat scroll 98%;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
@@ -173,15 +237,15 @@ form {
 
 .input-email:focus {
   outline: none;
-  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
-  background: url(/Images/icons8-email-20-green.png) no-repeat scroll 97% 7px;
+  box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
+  background: url(/Images/icons8-email-20-green.png) no-repeat scroll 98% 8px;
   background-color: white;
 }
 
 .input-namn:focus {
   outline: none;
-  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
-  background: url(/Images/icons8-person-20-green.png) no-repeat scroll 97% 7px;
+  box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
+  background: url(/Images/icons8-person-20-green.png) no-repeat scroll 98% 8px;
   background-color: white;
 }
 
@@ -198,7 +262,7 @@ form {
 }
 
 .knapp:hover {
-  box-shadow: 0 0 10px 6px rgba(87, 180, 95, 0.603);
+  box-shadow: 0 0 10px 6px rgba(88, 180, 95, 0.603);
   color: green;
 }
 
@@ -212,7 +276,7 @@ select {
 }
 
 select:focus {
-  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
+  box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
 }
 
 textarea {
@@ -226,7 +290,7 @@ textarea {
 }
 
 textarea:focus {
-  box-shadow: 0 0 15px 4px rgba(87, 180, 95, 0.603);
+  box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
   outline: none;
 }
 
@@ -247,7 +311,7 @@ textarea:focus {
   padding-top: 3em;
   padding-left: 5em;
   display: flex;
-  width: 70%;
+  width: 80%;
   gap: 2em;
   flex-direction: row;
   align-items: center;
@@ -257,12 +321,14 @@ textarea:focus {
   width: 90%;
   height: 100%;
   filter: blur(10px);
+  margin-bottom: 10em;
 }
 
 #comingSoon2 {
   width: 90%;
   height: 100%;
   filter: blur(10px);
+  margin-bottom: 10em;
 }
 
 .projekt-item {
@@ -328,6 +394,7 @@ textarea:focus {
   animation: 0.5s linear forwards reveal;
 }
 .wrapper {
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -409,16 +476,16 @@ textarea:focus {
 
 #caesar1 {
   padding-top: 2em;
-  width: 75%;
+  width: 85%;
 }
 
 #caesar2 {
-  width: 75%;
+  width: 85%;
 }
 
 #Elin-och-Marcus {
   padding: 2em;
-  width: 70%;
+  width: 80%;
 }
 
 .projekt-display {
@@ -429,7 +496,7 @@ textarea:focus {
 }
 
 .proj1paragraf1 {
-  background-color: rgba(226, 217, 217, 0.932);
+  background-color: rgba(226, 218, 218, 0.932);
   padding: 1.5em;
   border-radius: 30px;
   margin-bottom: 1em;
@@ -437,7 +504,7 @@ textarea:focus {
 }
 
 .proj1paragraf {
-  background-color: rgba(226, 217, 217, 0.932);
+  background-color: rgba(226, 218, 218, 0.932);
   padding: 1.5em;
   border-radius: 30px;
   margin-bottom: 5em;
@@ -445,7 +512,7 @@ textarea:focus {
 }
 
 .proj2paragraf {
-  background-color: rgba(226, 217, 217, 0.932);
+  background-color: rgba(226, 218, 218, 0.932);
   padding: 1.5em;
   border-radius: 30px;
   margin-bottom: 10em;
@@ -459,11 +526,11 @@ textarea:focus {
 
   bottom: 0;
   width: 100%;
-  height: 75px;
+  height: 85px;
   background-image: linear-gradient(
     to bottom,
     rgba(169, 189, 158, 0.068),
-    rgba(101, 153, 67, 0.863)
+    rgba(101, 153, 68, 0.863)
   );
   display: flex;
   flex-direction: row;
@@ -471,15 +538,17 @@ textarea:focus {
 }
 
 .ikoner {
-  width: 50%;
+  width: 55%;
   padding-top: 0.5em;
   display: flex;
+  padding-left: 1em;
+
   gap: 2em;
 }
 
 .cat {
-  width: 50%;
-  transform: rotate(-40deg) translateX(75%) translateY(345%);
+  width: 45%;
+  transform: rotate(-40deg) translateX(85%) translateY(345%);
   -webkit-animation: 0.2s ease-in forwards döljKatt;
   -moz-animation: 0.2s ease-in forwards döljKatt;
   -o-animation: 0.2s ease-in forwards döljKatt;
@@ -495,79 +564,79 @@ textarea:focus {
 
 .kattParagraf {
   position: absolute;
-  bottom: 17%;
+  bottom: 18%;
   right: 6%;
   transform: rotate(-43deg);
   padding: 1em;
   border-radius: 20px;
-  background-color: rgba(226, 217, 217, 0.932);
+  background-color: rgba(226, 218, 218, 0.932);
   display: none;
 }
 
 @-webkit-keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
 }
 @-moz-keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
 }
 @-o-keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
 }
 @keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
 }
 
 @-webkit-keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
 }
 
 @-moz-keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
 }
 @-o-keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
 }
 @keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(75%) translateY(225%);
+    transform: rotate(-40deg) translateX(80%) translateY(225%);
   }
   to {
-    transform: rotate(-40deg) translateX(75%) translateY(345%);
+    transform: rotate(-40deg) translateX(80%) translateY(345%);
   }
 }
 
