@@ -9,6 +9,8 @@
 
 body {
   background-image: url(/Images/annie-spratt-YKBoscpkYwY-unsplash.jpg);
+  background-color: rgba(0, 0, 0, 0.438);
+  background-blend-mode: multiply;
   background-position: center;
   background-repeat: repeat-x;
   background-size: 100%;
@@ -35,8 +37,8 @@ a {
   height: 85px;
   background-image: linear-gradient(
     to top,
-    rgba(169, 189, 158, 0.123),
-    rgba(101, 153, 68, 0.863)
+    rgba(169, 189, 158, 0.027),
+    rgba(0, 0, 0, 0.863)
   );
   display: flex;
   flex-direction: row;
@@ -54,7 +56,6 @@ nav {
 
 #darkmode {
   width: 5%;
-
   margin-left: -5em;
   justify-self: left;
   cursor: pointer;
@@ -72,73 +73,21 @@ nav {
 }
 
 .meny-länk {
-  margin-left: 2em;
-  color: black;
-  padding: 0.5em;
-  border-radius: 15px;
-}
-
-.meny-länk:hover {
-  background-image: linear-gradient(
-    to top,
-    rgba(103, 151, 88, 0.411),
-    rgba(63, 121, 25, 0.801)
-  );
-}
-
-/* SIDHUVUD OCH MENY */
-
-.dark {
-  background-image: url(/Images/annie-spratt-YKBoscpkYwY-unsplash.jpg);
-  background-color: rgba(0, 0, 0, 0.438);
-  background-blend-mode: multiply;
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-}
-
-.darkHead {
-  width: 100%;
-  background-image: linear-gradient(
-    to top,
-    rgba(169, 189, 158, 0.027),
-    rgba(0, 0, 0, 0.863)
-  );
-  position: sticky;
-  top: 0;
-  height: 85px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-weight: bolder;
-}
-
-.darkNav {
-  display: flex;
-}
-
-.darkMeny {
-  font-size: 1em;
-  padding-left: 3.2em;
-  width: 97.3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.darkModeText {
   color: rgb(252, 252, 252);
   padding: 0.5em;
   border-radius: 15px;
   margin-left: 2em;
 }
 
-/* DARK MODE */
+.meny-länk:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(30, 32, 28, 0.555),
+    rgba(0, 0, 0, 0.863)
+  );
+}
+
+/* SIDHUVUD OCH MENY */
 .container {
   display: flex;
 
@@ -150,20 +99,6 @@ nav {
   width: 80%;
 
   gap: 3em;
-}
-
-.omMig {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgba(226, 218, 218, 0.932);
-  gap: 3em;
-  padding: 3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 30px;
-
-  flex: 0.8;
 }
 
 .bildOlle {
@@ -179,7 +114,7 @@ nav {
   max-width: 80%;
 }
 
-.darkParagraf {
+.omMig {
   background-color: rgba(7, 7, 7, 0.712);
   color: white;
   display: flex;
@@ -481,8 +416,8 @@ textarea:focus {
 }
 
 /*
-   * Landningssida för mina projekt, preview för alla projekt med blurrad bild samt text på.
-   */
+     * Landningssida för mina projekt, preview för alla projekt med blurrad bild samt text på.
+     */
 
 #git-link {
   text-decoration: underline;
@@ -536,22 +471,6 @@ textarea:focus {
 /* PROJEKT */
 
 .fot {
-  position: fixed;
-
-  bottom: 0;
-  width: 100%;
-  height: 85px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(169, 189, 158, 0.068),
-    rgba(101, 153, 68, 0.863)
-  );
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.darkFoot {
   width: 100%;
   background-image: linear-gradient(
     to bottom,
@@ -577,36 +496,18 @@ textarea:focus {
 }
 
 .facebook {
-  background-image: url(/Images/icons8-facebook-60\(1\).png);
-  background-repeat: no-repeat;
-  width: 5.5%;
-}
-
-.instagram {
-  background-image: url(/Images/icons8-instagram-60.png);
-  background-repeat: no-repeat;
-  width: 5.2%;
-}
-
-.linkedin {
-  background-image: url(/Images/icons8-linkedin-60.png);
-  background-repeat: no-repeat;
-  width: 5.5%;
-}
-
-.darkFb {
   background-image: url(/Images/icons8-facebook-60-white.png);
   background-repeat: no-repeat;
   width: 5.5%;
 }
 
-.darkInsta {
+.instagram {
   background-image: url(/Images/icons8-instagram-60-white.png);
   background-repeat: no-repeat;
   width: 5.2%;
 }
 
-.darkLinkedIn {
+.linkedin {
   background-image: url(/Images/icons8-linkedin-60-white.png);
   background-repeat: no-repeat;
   width: 5.5%;
