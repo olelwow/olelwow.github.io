@@ -31,7 +31,7 @@
 const darkModeToggle = document.getElementById("darkModeToggle");
 const isDark = getCookie("isDark");
 
-// Check if the 'isDark' cookie is set and toggle dark mode accordingly
+
 if (isDark === "true") {
     darkModeToggle.href = "./css/darkStyle.css";
 } else {

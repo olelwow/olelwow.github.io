@@ -151,7 +151,6 @@ nav {
 
 .Olle {
   border-radius: 50%;
-
   border: 8px solid rgba(226, 218, 218, 0.521);
   max-width: 80%;
 }
@@ -195,7 +194,8 @@ option {
 
 .formulär {
   flex: 0.2;
-  background-color: rgba(226, 218, 218, 0.932);
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
   border-radius: 10px;
   margin-top: 5%;
   height: fit-content;
@@ -208,7 +208,8 @@ form {
 .input-namn {
   width: 95%;
   background: url(/Images/icons8-person-20.png) no-repeat scroll 98% 8px;
-  background-color: white;
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -218,8 +219,9 @@ form {
 .input-email {
   width: 95%;
   margin-top: 1em;
-  background: url(/Images/icons8-email-20.png) no-repeat scroll 98%;
-  background-color: white;
+  background: url(/Images/icons8-email-20-White.png) no-repeat scroll 98%;
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -230,14 +232,16 @@ form {
   outline: none;
   box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
   background: url(/Images/icons8-email-20-green.png) no-repeat scroll 98% 8px;
-  background-color: white;
+  background-color: rgba(7, 7, 7, 0.349);
+  color: white;
 }
 
 .input-namn:focus {
   outline: none;
   box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
   background: url(/Images/icons8-person-20-green.png) no-repeat scroll 98% 8px;
-  background-color: white;
+  background-color: rgba(7, 7, 7, 0.349);
+  color: white;
 }
 
 .knapp {
@@ -263,11 +267,14 @@ select {
   border-radius: 10px;
   border: none;
   box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
-  background-color: white;
+  background-color: rgba(7, 7, 7, 0.349);
+  color: white;
 }
 
 select:focus {
   box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
+  background-color: rgba(7, 7, 7, 0.349);
+  color: white;
 }
 
 textarea {
@@ -278,11 +285,15 @@ textarea {
   border-radius: 30px;
   border: none;
   box-shadow: 0 0 15px 4px rgba(102, 105, 104, 0.603);
+  background-color: rgba(7, 7, 7, 0.349);
+  color: white;
 }
 
 textarea:focus {
   box-shadow: 0 0 15px 4px rgba(88, 180, 95, 0.603);
   outline: none;
+  background-color: rgba(7, 7, 7, 0.349);
+  color: white;
 }
 
 .kontakt {
