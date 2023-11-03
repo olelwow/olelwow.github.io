@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "digitalFont";
+  src: url(/Fonts/digital-7/digital-7.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -42,22 +47,21 @@ a {
   );
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-weight: bolder;
+  z-index: 100;
 }
 
 nav {
   display: flex;
-  width: 90%;
+  width: 80%;
   justify-content: space-around;
-  margin-left: -2em;
+  margin-left: 2em;
 }
 
 #darkmode {
-  width: 5%;
-  margin-left: -5em;
-  justify-self: left;
+  width: 6%;
   cursor: pointer;
 }
 
@@ -65,7 +69,7 @@ nav {
   margin-left: 0.3em;
   font-size: 2em;
   padding: 0.5em;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -73,18 +77,56 @@ nav {
 }
 
 .meny-länk {
+  margin-left: 3.2em;
   color: rgb(252, 252, 252);
   padding: 0.5em;
   border-radius: 15px;
-  margin-left: 2em;
+  background-image: linear-gradient(
+    to top,
+    rgba(169, 189, 158, 0.027),
+    rgba(0, 0, 0, 0.192)
+  );
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: ease-in-out;
 }
 
 .meny-länk:hover {
+  background-position: bottom left;
   background-image: linear-gradient(
     to top,
-    rgba(30, 32, 28, 0.555),
+    rgba(169, 189, 158, 0.027),
     rgba(0, 0, 0, 0.863)
   );
+}
+
+.meny-länk:active {
+  background-color: rgb(5, 5, 5);
+}
+
+#clockWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  border-radius: 10px;
+  padding: 1em;
+  width: 10%;
+}
+
+#clock {
+  font-family: "digitalFont";
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#date {
+  font-family: monospace;
+  font-size: 1.5em;
+  color: white;
 }
 
 /* SIDHUVUD OCH MENY */
@@ -306,7 +348,7 @@ textarea:focus {
 .comingSoonText {
   color: white;
   position: absolute;
-  top: 48%;
+  top: 36%;
   left: 45%;
   transform: translate(-50%, -50%);
 }
@@ -420,6 +462,7 @@ textarea:focus {
      */
 
 #git-link {
+  color: white;
   text-decoration: underline;
 }
 
@@ -444,8 +487,16 @@ textarea:focus {
   gap: 2em;
 }
 
+.projekt-display h1 {
+  color: white;
+  background-color: rgba(7, 7, 7, 0.712);
+  padding: 0.5em;
+  border-radius: 30px;
+}
+
 .proj1paragraf1 {
-  background-color: rgba(226, 218, 218, 0.932);
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
   padding: 1.5em;
   border-radius: 30px;
   margin-bottom: 1em;
@@ -453,7 +504,8 @@ textarea:focus {
 }
 
 .proj1paragraf {
-  background-color: rgba(226, 218, 218, 0.932);
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
   padding: 1.5em;
   border-radius: 30px;
   margin-bottom: 5em;
@@ -461,7 +513,8 @@ textarea:focus {
 }
 
 .proj2paragraf {
-  background-color: rgba(226, 218, 218, 0.932);
+  background-color: rgba(7, 7, 7, 0.712);
+  color: white;
   padding: 1.5em;
   border-radius: 30px;
   margin-bottom: 10em;
@@ -515,7 +568,8 @@ textarea:focus {
 
 .cat {
   width: 45%;
-  transform: rotate(-40deg) translateX(85%) translateY(345%);
+  position: relative;
+  z-index: -2;
   -webkit-animation: 0.2s ease-in forwards döljKatt;
   -moz-animation: 0.2s ease-in forwards döljKatt;
   -o-animation: 0.2s ease-in forwards döljKatt;
@@ -529,70 +583,89 @@ textarea:focus {
   animation: 1s ease-out forwards visaKatt;
 }
 
+#katt {
+  width: 25%;
+  transform: rotate(-12deg) translateX(-735%) translateY(-90%);
+}
+
+#hatt {
+  position: relative;
+  width: 15%;
+  transform: rotate(-2deg) translateX(-1120%) translateY(-35%);
+  z-index: 100;
+}
+
+#tand {
+  width: 4%;
+  position: relative;
+  transform: rotate(-6deg) translateX(-3910%) translateY(-480%);
+  z-index: 99;
+}
+
 @-webkit-keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
 }
 @-moz-keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
 }
 @-o-keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
 }
 @keyframes visaKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
 }
 
 @-webkit-keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
 }
 
 @-moz-keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
 }
 @-o-keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
 }
 @keyframes döljKatt {
   from {
-    transform: rotate(-40deg) translateX(80%) translateY(225%);
+    transform: rotate(-40deg) translateX(240%) translateY(10%);
   }
   to {
-    transform: rotate(-40deg) translateX(80%) translateY(345%);
+    transform: rotate(-40deg) translateX(240%) translateY(110%);
   }
 }
 
