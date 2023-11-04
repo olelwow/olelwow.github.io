@@ -57,16 +57,22 @@ nav {
   display: flex;
   width: 80%;
   justify-content: space-around;
-  margin-left: 2em;
+  margin-left: 5em;
 }
 
 #darkmode {
-  width: 6%;
+  width: 85px;
+  height: 85px;
+
+  background-image: url(/Images/icons8-dark-mode-50-go-light.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .meny {
-  margin-left: 0.3em;
+  margin-left: 0.4em;
   font-size: 2em;
   padding: 0.5em;
   width: 100%;
@@ -88,7 +94,6 @@ nav {
   );
   background-size: 100% 200%;
   background-position: top left;
-  transition: ease-in-out;
 }
 
 .meny-länk:hover {
