@@ -120,18 +120,56 @@ nav {
   width: 10%;
 }
 
+#clockIkon {
+  background-image: url(/Images/clock-dark-mode.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+
 #clock {
   font-family: "digitalFont";
   text-align: center;
   color: white;
   font-weight: bold;
   font-size: 2em;
+  display: none;
+  cursor: pointer;
 }
 
 #date {
   font-family: monospace;
   font-size: 1.5em;
   color: white;
+  display: none;
+}
+
+.animateIn {
+  animation: fadeIn 1s linear forwards;
+}
+
+.animateOut {
+  animation: fadeOut 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 /* SIDHUVUD OCH MENY */

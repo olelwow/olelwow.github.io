@@ -29,7 +29,7 @@
 // }
 
 const darkModeToggle = document.getElementById("darkModeToggle");
-const isDark = getCookie("isDark");
+let isDark = getCookie("isDark");
 
 
 if (isDark === "true") {
@@ -39,6 +39,7 @@ if (isDark === "true") {
 }
 
 function toggleDarkMode() {
+    isDark = getCookie("isDark");
     if (isDark === "true") {
         darkModeToggle.href = "./css/style.css";
         setCookie("isDark", "false");
@@ -63,6 +64,11 @@ function getCookie(name) {
     return "";
 }
 
+// DARKMODE ^
+
+const datum = document.getElementById("date");
+const klocka = document.getElementById("clock");
+
 function updateClock () {
     const date = new Date();
 
@@ -81,16 +87,64 @@ function updateClock () {
               + ":" 
               + seconds;
 
-    document.getElementById("clock").innerHTML = currentTime;          
+    klocka.innerHTML = currentTime;          
 }
 
 function updateDate () {
+
+
     const date = new Date();
 
-    document.getElementById("date").innerHTML = date.toDateString();
+    let sweMonths = ["Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"];
+    let sweDays = ["Mån", "Tis", "Ons", "Tors", "Fre", "Lör", "Sön"];
+    // Svenska namn på månader och dagar. 
+    let todayDate = date.getDate();
+    // Tar in dagens datum i siffror, t.ex dag 07
+
+    todayDate = todayDate < 10 ? "0" + todayDate: todayDate;
+    // Lägger till 0 ifall datumet är under 10.
+
+    let newDate = sweDays[date.getDay()] + " " + todayDate + " " + sweMonths[date.getMonth()] + " " + date.getFullYear();
+
+    datum.innerHTML = newDate;
 
 
 }
+
+// KLOCKA ^
+
+const klockIkon = document.getElementById("clockIkon");
+
+
+let visaInfo = (e) => {
+    datum.style.display = "block";
+    datum.classList.remove("animateOut");
+    datum.classList.add("animateIn");
+    klocka.style.display = "block";
+    klocka.classList.remove("animateOut");
+    klocka.classList.add("animateIn");
+    klockIkon.style.display = "none";
+    klockIkon.classList.remove("animateIn");
+    klockIkon.classList.add("animateOut");
+}
+
+let hideInfo = (e) => {
+    datum.style.display = "none";
+    datum.classList.remove("animateIn");
+    datum.classList.add("animateOut");
+    klocka.style.display = "none";
+    klocka.classList.remove("animateIn");
+    klocka.classList.add("animateOut");
+    klockIkon.style.display = "block";
+    klockIkon.classList.remove("animateOut");
+    klockIkon.classList.add("animateIn");
+}
+
+klockIkon.addEventListener('click', visaInfo);
+klocka.addEventListener('click', hideInfo);
+
+
+// Animation för klocka ^
 
 updateClock();
 setInterval(updateClock, 1000);
