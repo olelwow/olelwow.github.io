@@ -770,4 +770,96 @@ textarea:focus {
     width: 10%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #cross {
+    display: block;
+    background-image: url(/Images/icons8-x-50.png);
+    width: 50px;
+    aspect-ratio: 1;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  #hamburger {
+    background-image: url(/Images/icons8-hamburger-menu-50.png);
+    width: 50px;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .huvud {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 60%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(
+      to left,
+      rgba(22, 24, 22, 0.938),
+      rgba(0, 0, 0, 0.795)
+    );
+    justify-content: center;
+    gap: 5em;
+    transform: translateX(-100%);
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  .meny {
+    gap: 5em;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .meny-element {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+
+    text-align: center;
+  }
+
+  .meny-länk {
+    padding: 0;
+    margin: 0;
+    padding: 0.2em 0.2em;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .showMenu {
+    animation: openMenu 0.5s ease-in forwards;
+  }
+
+  .hideMenu {
+    animation: closeMenu 0.5s ease-in forwards;
+  }
+
+  @keyframes closeMenu {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes openMenu {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
 /* SIDFOT */
