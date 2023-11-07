@@ -702,6 +702,72 @@ textarea:focus {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1550px) and (min-width: 1100px) {
+  body {
+    background-repeat: repeat-y;
+    background-blend-mode: overlay;
+  }
+
+  .huvud {
+    justify-content: space-evenly;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  .meny {
+    margin-left: 0.4em;
+  }
+
+  .meny-länk {
+    margin-left: 0.5em;
+  }
+
+  #clockWrapper {
+    width: auto;
+    gap: 0;
+  }
+
+  #clockIkon {
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+  }
+
+  #date {
+    text-align: center;
+  }
+  /* HEADER */
+
+  .formulär {
+    margin: 10em;
+  }
+
+  /* KONTAKT */
+
+  .projekt-display h1 {
+    padding: 0.5em;
+    border-radius: 30px;
+    background-color: rgba(226, 218, 218, 0.932);
+  }
+
+  /* PROJEKT */
+
+  .ikoner {
+    gap: 1em;
+  }
+
+  .facebook {
+    width: 10%;
+  }
+
+  .instagram {
+    width: 10%;
+  }
+
+  .linkedin {
+    width: 10%;
+  }
 }
 /* SIDFOT */
