@@ -28,6 +28,31 @@
     
 // }
 
+
+const kryss = document.getElementById("cross");
+const hamburger = document.getElementById("hamburger");
+const huvud = document.getElementsByClassName("huvud");
+
+let showOrHideMenu = () => {
+    
+    if (!huvud[0].classList.contains("showMenu")) {
+        hamburger.style.display = "none";
+        huvud[0].classList.remove("hideMenu");
+        huvud[0].classList.add("showMenu");
+    } else {
+        huvud[0].classList.add("hideMenu");
+        huvud[0].classList.remove("showMenu");
+        hamburger.style.display = "block";
+    }
+}
+
+hamburger.addEventListener('click', showOrHideMenu);
+kryss.addEventListener('click', showOrHideMenu);
+
+
+// Mobil-meny
+
+
 const darkModeToggle = document.getElementById("darkModeToggle");
 let isDark = getCookie("isDark");
 
